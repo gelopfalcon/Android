@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar snackbar = Snackbar
-                        .make(coordinatorLayout, "Welcome to AndroidHive", Snackbar.LENGTH_LONG);
+                        .make(coordinatorLayout, "Bienvenido a CodeFalcon", Snackbar.LENGTH_LONG);
 
                 snackbar.show();
             }
@@ -51,11 +51,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar snackbar = Snackbar
-                        .make(coordinatorLayout, "Message is deleted", Snackbar.LENGTH_LONG)
+                        .make(coordinatorLayout, "Mensaje borrado", Snackbar.LENGTH_LONG)
                         .setAction("UNDO", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Snackbar snackbar1 = Snackbar.make(coordinatorLayout, "Message is restored!", Snackbar.LENGTH_SHORT);
+                                Snackbar snackbar1 = Snackbar.make(coordinatorLayout, "Mensage restaurado!", Snackbar.LENGTH_SHORT);
                                 snackbar1.show();
                             }
                         });
@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("RETRY", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
+
                             }
                         });
 
