@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Compartir Contenido</string>
+    <string name="share_text">Share Text or URL</string>
+    <string name="share_image">Share Image</string>
+    </resources>
