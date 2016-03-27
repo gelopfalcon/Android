@@ -52,15 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void shareImage() {
         Intent share = new Intent(Intent.ACTION_SEND);
-
-        // If you want to share a png image only, you can do:
-        // setType("image/png"); OR for jpeg: setType("image/jpeg");
+        
         share.setType("image/*");
 
-        // Make sure you put example png image named myimage.png in your
-        // directory
-       // String imagePath = Environment.getExternalStorageDirectory()
-          //      + "/myimage.JPEG";
 
         Uri imageUri = null;
 
