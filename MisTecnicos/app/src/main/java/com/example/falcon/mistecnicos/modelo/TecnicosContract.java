@@ -12,7 +12,7 @@ public class TecnicosContract {
     /**
      * Autoridad del Content Provider
      */
-    public final static String AUTHORITY = "com.example.falcon.mistecnicos.modelo.com.example.falcon.mistecnicos.modelo.TecnicosProvider";
+    public final static String AUTHORITY = "com.example.falcon.mistecnicos.modelo.TecnicosProvider";
     /**
      * Representación de la tabla a consultar
      */
