@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.Set;
 
 public class MainActivity extends ActionBarActivity {
-    Button b1,b2;
+    Button b1;
     ImageView iv;
 
     @Override

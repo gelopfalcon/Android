@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void shareImage() {
         Intent share = new Intent(Intent.ACTION_SEND);
-        
+
         share.setType("image/*");
 
 
