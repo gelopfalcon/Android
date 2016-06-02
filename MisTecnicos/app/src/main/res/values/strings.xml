@@ -1,4 +1,29 @@
 <resources>
     <string name="app_name">Mis Tecnicos</string>
     <string name="action_settings">Settings</string>
+    <!-- Arreglos para spinners -->
+    <string-array name="prioridad">
+        <item>Alta</item>
+        <item>Media</item>
+        <item>Baja</item>
+    </string-array>
+
+    <string-array name="tecnico">
+        <item>Técnico #1</item>
+        <item>Técnico #2</item>
+        <item>Técnico #3</item>
+    </string-array>
+
+    <string-array name="categoria">
+        <item>Factibilidad</item>
+        <item>Mantenimiento</item>
+        <item>Migración</item>
+    </string-array>
+
+    <string-array name="estado">
+        <item>Abierta</item>
+        <item>En Curso</item>
+        <item>Cerrada</item>
+    </string-array>
+
 </resources>

@@ -36,7 +36,8 @@ public class MainActivity extends Activity {
 
         // using native contacts selection
         // Intent.ACTION_PICK = Pick an item from the data, returning what was selected.
-        startActivityForResult(new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI), REQUEST_CODE_PICK_CONTACTS);
+        startActivityForResult(new Intent(Intent.ACTION_PICK,
+                ContactsContract.Contacts.CONTENT_URI), REQUEST_CODE_PICK_CONTACTS);
     }
 
     @Override

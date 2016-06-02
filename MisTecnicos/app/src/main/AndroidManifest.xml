@@ -18,10 +18,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <provider
             android:name=".modelo.TecnicosProvider"
             android:authorities="com.example.falcon.mistecnicos.modelo.TecnicosProvider"
             android:exported="false" />
+        <activity
+            android:name=".UI.ActividadDetalle"
+            android:label="DETALLE"
+            android:parentActivityName=".UI.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".UI.InsertarActividad"
+            android:label="Insertar"
+            android:parentActivityName=".UI.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UI.UpdateActivity"
+            android:label="ACTUALIZAR"
+            android:parentActivityName=".UI.ActividadDetalle" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.ActividadDetalle" />
+        </activity>
     </application>
 
 </manifest>

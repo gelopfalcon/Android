@@ -1,7 +1,9 @@
 package com.example.falcon.mistecnicos.UI;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ListFragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
@@ -9,6 +11,9 @@ import android.support.v4.content.Loader;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ListView;
 
 
 import com.example.falcon.mistecnicos.AdaptadorActividades;
@@ -37,11 +42,24 @@ public class MainActivityFragment extends ListFragment implements
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-        // Otras acciones
+
+        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
+        fab.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getActivity()
+                                .startActivity(
+                                        new Intent(getActivity(), InsertarActividad.class)
+                                );
+
+                    }
+                }
+        );
         return view;
     }
-
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -72,6 +90,11 @@ public class MainActivityFragment extends ListFragment implements
         adaptador.swapCursor(null);
     }
 
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        getActivity().startActivity(new Intent(getActivity(), ActividadDetalle.class)
+                .putExtra(TecnicosContract.Columnas._ID, id));
+    }
     @Override
     public void onDestroy() {
         super.onDestroy();
